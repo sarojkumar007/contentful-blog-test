@@ -26,8 +26,8 @@ export default () =>{
 return (
   <Layout>
     <Head title="Blog" />
-    <h1>This is my blog page ...</h1>
-    <p>Contents will be updated soon ...</p>
+    <h1>This is Saroj's blog page ...</h1>
+    <p>Contents will be updated soon...</p>
     <ul>
       {data.allContentfulBlogPost.edges.map((e,i) =>{
         return(
