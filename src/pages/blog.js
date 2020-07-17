@@ -29,9 +29,9 @@ return (
     <h1>This is my blog page ...</h1>
     <p>Contents will be updated soon ...</p>
     <ul>
-      {data.allContentfulBlogPost.edges.map(e =>{
+      {data.allContentfulBlogPost.edges.map((e,i) =>{
         return(
-          <li>
+          <li key={i}>
             <Link to={`/blog/${e.node.slug}`} className="post">
               <h2>{e.node.title}</h2>
               <p>{e.node.publishedDate}</p>
